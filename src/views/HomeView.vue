@@ -166,11 +166,12 @@ export default {
                                  data-aos="fade-up"
                                  v-for="post in posts">
                             <div class="entry__thumb">
-                                <a href="single-standard.html" class="thumb-link">
+                                <RouterLink :to="post.id" class="thumb-link">
                                     <img :src="post.cover ?? 'images/eye.png'"
                                          alt="">
-                                    <!--                                     :srcset="post.cover +' 1x,' + post.cover +' 2x,'"-->
-                                </a>
+                                    <!--   :srcset="post.cover +' 1x,' + post.cover +' 2x,'"-->
+
+                                </RouterLink>
                             </div> <!-- end entry__thumb -->
 
                             <div class="entry__text">
@@ -182,7 +183,7 @@ export default {
                                     <div class="entry__meta">
                                         <span class="byline">By:
                                             <span class='author' v-for="author in post.authors">
-                                                <a href="https://www.dreamhost.com/r.cgi?287326">{{ author.name }}</a>
+                                                <a href="#">{{ author.name }}</a>
                                             </span>
                                         </span>
 
@@ -193,7 +194,7 @@ export default {
                                         {{ post.description }}
                                     </p>
                                 </div>
-                                <a class="entry__more-link" href="https://www.dreamhost.com/r.cgi?287326">Learn More</a>
+                                <RouterLink :to="post.id" class="entry__more-link">Learn More</RouterLink>
                             </div> <!-- end entry__text -->
 
                         </article> <!-- end article -->
