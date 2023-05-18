@@ -6,7 +6,6 @@ import {VueMasonryPlugin} from "vue-masonry";
 const app = createApp(App)
 
 app.use(VueMasonryPlugin)
-
 app.use(router)
 
 app.mount('#app')
