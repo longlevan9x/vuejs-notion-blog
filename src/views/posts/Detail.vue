@@ -1,8 +1,8 @@
-<script lang="js">
+<script lang="ts">
 
 import axios from "axios";
-import Giscus from "@/components/Giscus.vue";
 import {API_URL, GISCUS_CATEGORY, GISCUS_CATEGORY_ID, GISCUS_REPO, GISCUS_REPO_ID} from "@/environment";
+import Giscus from "@/components/Giscus.vue";
 
 export default {
     components: {Giscus},
@@ -10,7 +10,9 @@ export default {
         return {
             post: null,
             postContent: null,
-            giscus: null,
+            giscus: {
+                repo: ''
+            },
         };
     },
     created() {
@@ -30,6 +32,7 @@ export default {
                 category: GISCUS_CATEGORY,
                 categoryid: GISCUS_CATEGORY_ID
             }
+
             this.giscus.term = this.post.title;
         },
         async getPostContent(id) {
@@ -140,7 +143,7 @@ export default {
 
             <div id="comments" class="row">
                 <div class="column large-12">
-                    <Giscus :giscus="giscus" v-if="giscus"></Giscus>
+                    <Giscus :giscus="giscus" v-if="giscus.repo"></Giscus>
                 </div>
             </div>
         </div>
