@@ -4,11 +4,11 @@ import 'giscus';
 export default {
     props: {
         giscus: {
-            repo: String,
-            repoId: String,
-            category: String,
-            categoryid: String,
-            term: String,
+            repo: '',
+            repoId: '',
+            category: '',
+            categoryid: '',
+            term: '',
         }
     }
 }
