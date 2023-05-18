@@ -1,12 +1,9 @@
-<script lang="ts">
+<script>
 import 'giscus';
 
 export default {
     props: {
-        giscus: {}
-    },
-    created() {
-        this.giscus = {
+        giscus: {
             repo: '',
             repoId: '',
             category: '',

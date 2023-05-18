@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 
 import axios from "axios";
 import {API_URL, GISCUS_CATEGORY, GISCUS_CATEGORY_ID, GISCUS_REPO, GISCUS_REPO_ID} from "@/environment";
