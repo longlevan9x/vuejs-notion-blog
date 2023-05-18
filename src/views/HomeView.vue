@@ -1,5 +1,6 @@
 <script lang="ts">
 import axios from "axios";
+import {API_URL} from "@/environment";
 
 export default {
     data() {
@@ -12,7 +13,7 @@ export default {
     },
     methods: {
         async getPosts() {
-            const res = await axios.get('http://localhost:3000/app/posts');
+            const res = await axios.get('/app/posts', {baseURL: API_URL});
             this.posts = res.data;
             console.log(this.posts);
         }

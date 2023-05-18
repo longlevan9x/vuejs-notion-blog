@@ -2,6 +2,7 @@
 
 import axios from "axios";
 import Giscus from "@/components/Giscus.vue";
+import {API_URL, GISCUS_CATEGORY, GISCUS_CATEGORY_ID, GISCUS_REPO, GISCUS_REPO_ID} from "@/environment";
 
 export default {
     components: {Giscus},
@@ -21,18 +22,18 @@ export default {
     },
     methods: {
         async getPost(id) {
-            const res = await axios.get('http://localhost:3000/app/posts/' + id);
+            const res = await axios.get('http://localhost:3000/app/posts/' + id, {baseURL: API_URL});
             this.post = res.data;
             this.giscus = {
-                repo: 'longlevan9x/notion-blog-comment',
-                repoId: 'R_kgDOJe2r0g',
-                category: 'Blog Comment',
-                categoryid: 'DIC_kwDOJe2r0s4CWlBo'
+                repo: GISCUS_REPO,
+                repoId: GISCUS_REPO_ID,
+                category: GISCUS_CATEGORY,
+                categoryid: GISCUS_CATEGORY_ID
             }
             this.giscus.term = this.post.title;
         },
         async getPostContent(id) {
-            const res = await axios.get('http://localhost:3000/app/posts/' + id + '/content');
+            const res = await axios.get('/app/posts/' + id + '/content', {baseURL: API_URL});
             this.postContent = res.data;
         },
         formatDate(dateString) {
