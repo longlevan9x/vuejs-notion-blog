@@ -31,7 +31,7 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('src/assets/images/mountain.jpg');"></div>
+                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/mountain.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -59,7 +59,7 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('src/assets/images/slide2-bg-3000.jpg');"></div>
+                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/slide2-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -86,7 +86,7 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('src/assets/images/slide3-bg-3000.jpg');"></div>
+                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/slide3-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -167,7 +167,7 @@ export default {
                                  v-for="post in posts">
                             <div class="entry__thumb">
                                 <RouterLink :to="post.id" class="thumb-link">
-                                    <img :src="post.cover ?? './src/assets/images/eye.png'"
+                                    <img :src="post.cover ?? '/src/assets/images/eye.png'"
                                          alt="">
                                     <!--   :srcset="post.cover +' 1x,' + post.cover +' 2x,'"-->
 
