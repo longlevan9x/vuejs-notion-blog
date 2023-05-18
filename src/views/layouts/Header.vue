@@ -31,14 +31,14 @@
                         <RouterLink to="/" title="Home">Home</RouterLink>
                     </li>
                     <li class="has-children">
-                        <a href="#0" title="">Blog</a>
+                        <a href="#0" title="Blog">Blog</a>
                         <ul class="sub-menu">
                             <li><a href="single-video.html">Video Post</a></li>
                             <li><a href="single-audio.html">Audio Post</a></li>
                             <li><a href="single-standard.html">Standard Post</a></li>
                         </ul>
                     </li>
-                    <li><a href="about.html" title="">About</a></li>
+                    <li><a href="about.html" title="About">About</a></li>
                 </ul> <!-- end s-header__nav -->
 
                 <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
@@ -57,7 +57,7 @@
                     <form role="search" method="get" class="s-header__search-form" action="#">
                         <label>
                             <span class="h-screen-reader-text">Search for:</span>
-                            <input type="search" class="s-header__search-field" placeholder="Search for..." value=""
+                            <input type="search" class="s-header__search-field" placeholder="Search for..."
                                    name="s" title="Search for:" autocomplete="off">
                         </label>
                         <input type="submit" class="s-header__search-submit" value="Search">
