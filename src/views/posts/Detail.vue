@@ -61,7 +61,7 @@ export default {
 
                     <div class="s-content__media">
                         <div class="s-content__post-thumb">
-                            <img :src="post.cover"
+                            <img :src="post.cover || '/images/eye.png'"
 
                                  sizes="(max-width: 2100px) 100vw, 2100px" alt="">
                             <!--                            srcset="images/thumbs/single/single-post-2100.jpg 2100w,-->
