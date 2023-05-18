@@ -29,7 +29,7 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/mountain.jpg');"></div>
+                <div class="s-hero__slide-bg" style="background-image: url('/images/mountain.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -58,7 +58,7 @@ export default {
             <div class="s-hero__slide">
 
                 <div class="s-hero__slide-bg"
-                     style="background-image: url('/src/assets/images/slide2-bg-3000.jpg');"></div>
+                     style="background-image: url('/images/slide2-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -86,7 +86,7 @@ export default {
             <div class="s-hero__slide">
 
                 <div class="s-hero__slide-bg"
-                     style="background-image: url('/src/assets/images/slide3-bg-3000.jpg');"></div>
+                     style="background-image: url('/images/slide3-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
