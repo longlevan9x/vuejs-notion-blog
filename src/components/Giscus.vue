@@ -3,7 +3,10 @@ import 'giscus';
 
 export default {
     props: {
-        giscus: {
+        giscus: {}
+    },
+    created() {
+        this.giscus = {
             repo: '',
             repoId: '',
             category: '',
