@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 import axios from "axios";
 import {API_URL} from "@/environment";
 
@@ -15,11 +15,9 @@ export default {
         async getPosts() {
             const res = await axios.get('/app/posts', {baseURL: API_URL});
             this.posts = res.data;
-            console.log(this.posts);
         }
     }
 }
-
 
 </script>
 
@@ -59,7 +57,8 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/slide2-bg-3000.jpg');"></div>
+                <div class="s-hero__slide-bg"
+                     style="background-image: url('/src/assets/images/slide2-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
@@ -86,7 +85,8 @@ export default {
 
             <div class="s-hero__slide">
 
-                <div class="s-hero__slide-bg" style="background-image: url('/src/assets/images/slide3-bg-3000.jpg');"></div>
+                <div class="s-hero__slide-bg"
+                     style="background-image: url('/src/assets/images/slide3-bg-3000.jpg');"></div>
 
                 <div class="row s-hero__slide-content animate-this">
                     <div class="column">
