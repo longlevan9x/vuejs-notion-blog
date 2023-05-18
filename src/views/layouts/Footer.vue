@@ -63,7 +63,7 @@
 
                         <form id="mc-form" class="group" novalidate="true">
 
-                            <input type="email" value="" name="dEmail" class="email" id="mc-email"
+                            <input type="email" name="dEmail" class="email" id="mc-email"
                                    placeholder="Your Email Address" required="">
 
                             <input type="submit" name="subscribe" value="subscribe">
