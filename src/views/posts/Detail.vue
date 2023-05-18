@@ -22,7 +22,7 @@ export default {
     },
     methods: {
         async getPost(id) {
-            const res = await axios.get('http://localhost:3000/app/posts/' + id, {baseURL: API_URL});
+            const res = await axios.get('/app/posts/' + id, {baseURL: API_URL});
             this.post = res.data;
             this.giscus = {
                 repo: GISCUS_REPO,
@@ -81,7 +81,7 @@ export default {
 
                             <div class="entry-author meta-blk" v-for="author in post.authors">
                                 <div class="author-avatar">
-                                    <img class="avatar" src="images/doremon.png" alt="">
+                                    <img class="avatar" src="src/assets/images/doremon.png" alt="">
                                 </div>
                                 <div class="byline">
                                     <span class="bytext">Posted By</span>
