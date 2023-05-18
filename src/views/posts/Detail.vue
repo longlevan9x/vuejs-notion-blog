@@ -84,7 +84,7 @@ export default {
 
                             <div class="entry-author meta-blk" v-for="author in post.authors">
                                 <div class="author-avatar">
-                                    <img class="avatar" src="/src/assets/images/doremon.png" alt="">
+                                    <img class="avatar" src="/images/doremon.png" alt="">
                                 </div>
                                 <div class="byline">
                                     <span class="bytext">Posted By</span>

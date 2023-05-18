@@ -167,7 +167,7 @@ export default {
                                  v-for="post in posts">
                             <div class="entry__thumb">
                                 <RouterLink :to="post.id" class="thumb-link">
-                                    <img :src="post.cover ?? '/src/assets/images/eye.png'"
+                                    <img :src="post.cover ?? '/images/eye.png'"
                                          alt="">
                                     <!--   :srcset="post.cover +' 1x,' + post.cover +' 2x,'"-->
 
