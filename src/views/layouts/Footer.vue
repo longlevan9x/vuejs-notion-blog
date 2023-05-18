@@ -64,7 +64,7 @@
                         <form id="mc-form" class="group" novalidate="true">
 
                             <input type="email" name="dEmail" class="email" id="mc-email"
-                                   placeholder="Your Email Address" required="">
+                                   placeholder="Your Email Address">
 
                             <input type="submit" name="subscribe" value="subscribe">
 
