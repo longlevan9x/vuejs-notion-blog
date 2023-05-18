@@ -16,7 +16,7 @@
 
         <div class="s-header__logo">
             <RouterLink to="/" class="logo">
-                <img src="src/assets/images/logo.png" alt="Homepage">
+                <img src="/src/assets/images/logo.png" alt="Homepage">
             </RouterLink>
         </div>
 
