@@ -1,11 +1,10 @@
 <script lang="js">
 import axios from "axios";
 import {API_URL} from "@/environment";
-import PostCard from "@/components/posts/PostCard.vue";
 import PostListCard from "@/components/posts/PostListCard.vue";
 
 export default {
-    components: {PostListCard, PostCard},
+    components: {PostListCard},
     data() {
         return {
             posts: [],
