@@ -1118,7 +1118,7 @@
 }
 
 [data-aos^=fade][data-aos^=fade] {
-    opacity: 0;
+    /*opacity: 0;*/
     -webkit-transition-property: opacity, -webkit-transform;
     transition-property: opacity, -webkit-transform;
     transition-property: opacity, transform;

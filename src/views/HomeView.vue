@@ -162,7 +162,7 @@ export default {
                         <span></span>
                         <span></span>
                     </div>
-                    <PostListCard :posts="posts"></PostListCard>
+                    <PostListCard  :posts="posts"></PostListCard>
 
                 </div> <!-- end brick-wrapper -->
 

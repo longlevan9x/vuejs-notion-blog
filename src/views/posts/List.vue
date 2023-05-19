@@ -56,7 +56,7 @@ export default {
 
             </div> <!-- end masonry -->
 
-            <div class="row">
+            <div class="row is-hidden">
                 <div class="column large-12">
                     <nav class="pgn">
                         <ul>
