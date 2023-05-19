@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
 import PostCard from "@/components/posts/PostCard.vue";
 
 export default {

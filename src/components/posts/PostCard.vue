@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
 export default {
     props: {
         post: {

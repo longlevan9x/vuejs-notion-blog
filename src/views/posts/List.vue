@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="js">
 import axios from "axios";
 import {API_URL} from "@/environment";
 import PostListCard from "@/components/posts/PostListCard.vue";
