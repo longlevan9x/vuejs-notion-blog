@@ -1,8 +1,11 @@
 <script lang="js">
 import axios from "axios";
 import {API_URL} from "@/environment";
+import PostCard from "@/components/posts/PostCard.vue";
+import PostListCard from "@/components/posts/PostListCard.vue";
 
 export default {
+    components: {PostListCard, PostCard},
     data() {
         return {
             posts: [],
@@ -160,45 +163,7 @@ export default {
                         <span></span>
                         <span></span>
                     </div>
-
-                    <div v-masonry transition-duration="0.3s" item-selector=".item">
-                        <article v-masonry-tile class="item masonry__brick entry format-standard brick entry"
-                                 data-aos="fade-up"
-                                 v-for="post in posts">
-                            <div class="entry__thumb">
-                                <RouterLink :to="post.id" class="thumb-link">
-                                    <img :src="post.cover ?? '/images/eye.png'"
-                                         alt="">
-                                    <!--   :srcset="post.cover +' 1x,' + post.cover +' 2x,'"-->
-
-                                </RouterLink>
-                            </div> <!-- end entry__thumb -->
-
-                            <div class="entry__text">
-                                <div class="entry__header">
-                                    <h1 class="entry__title">
-                                        <RouterLink :to="post.id">{{ post.title }}</RouterLink>
-                                    </h1>
-
-                                    <div class="entry__meta">
-                                        <span class="byline">By:
-                                            <span class='author' v-for="author in post.authors">
-                                                <a href="#">{{ author.name }}</a>
-                                            </span>
-                                        </span>
-
-                                    </div>
-                                </div>
-                                <div class="entry__excerpt">
-                                    <p>
-                                        {{ post.description }}
-                                    </p>
-                                </div>
-                                <RouterLink :to="post.id" class="entry__more-link">Learn More</RouterLink>
-                            </div> <!-- end entry__text -->
-
-                        </article> <!-- end article -->
-                    </div>
+                    <PostListCard :posts="posts"></PostListCard>
 
                 </div> <!-- end brick-wrapper -->
 

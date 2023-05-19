@@ -30,15 +30,10 @@
                     <li class="current">
                         <RouterLink to="/" title="Home">Home</RouterLink>
                     </li>
-                    <li class="has-children">
-                        <a href="#0" title="Blog">Blog</a>
-                        <ul class="sub-menu">
-                            <li><a href="single-video.html">Video Post</a></li>
-                            <li><a href="single-audio.html">Audio Post</a></li>
-                            <li><a href="single-standard.html">Standard Post</a></li>
-                        </ul>
+                    <li>
+                        <RouterLink to="/post" title="Blog">Blog</RouterLink>
                     </li>
-                    <li><a href="about.html" title="About">About</a></li>
+                    <li class="is-hidden"><a href="about.html" title="About">About</a></li>
                 </ul> <!-- end s-header__nav -->
 
                 <a href="#0" title="Close Menu" class="s-header__overlay-close close-mobile-menu">Close</a>
